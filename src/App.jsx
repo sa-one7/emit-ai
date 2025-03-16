@@ -2,13 +2,22 @@ import React from 'react'
 import Sidebar from './components/Sidebar/sidebar'
 import Main from './components/Main/Main'
 
+import { SignedIn, SignedOut, SignInButton, UserButton, RedirectToSignIn, RedirectToSignUp } from "@clerk/clerk-react"
+
 const App = () => {
   return (
     
       <>
-      <Sidebar />
-      <Main />
-      
+ {/* Redirect to Sign In if not logged in */}
+ <SignedOut>
+        <RedirectToSignIn />
+      </SignedOut>
+
+      {/* Show full app only after login */}
+      <SignedIn>
+        <Sidebar />
+        <Main />
+      </SignedIn>
       </>
 
   )
