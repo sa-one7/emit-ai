@@ -1,12 +1,24 @@
-# React + Vite
+# Emit AI 💬🤖  
+A smart, interactive prompt-based AI assistant built with React.js, Clerk authentication, and a clean conversational UI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔥 Features
+- 🔐 User Authentication with Clerk (Sign In / Sign Out / Profile)
+- 💬 Real-time prompt processing with animated responses
+- 🎨 Responsive and clean UI with chat-style interface
+- 🧠 Personalized user experience (profile pic and greeting)
+- 🚀 Deployed on Vercel
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
+- **Frontend:** React.js, Context API, CSS3
+- **Auth:** Clerk.dev (hosted login + user avatar + profile)
+- **Deployment:** Vercel
+- **State Management:** React Context API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
+👉 [Visit Emit AI](https://emit-ai.vercel.app)
 
-## Expanding the ESLint configuration
+## 👤 Auth Features
+- Sign In with Clerk-hosted UI
+- Clerk `UserButton` and `imageUrl` integration
+- Personalized greeting with `user.firstName`
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
